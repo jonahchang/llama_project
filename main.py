@@ -39,7 +39,7 @@ async def get_current_weather(location: str) -> str:
             temp = weather.temperature
             description = weather.description
             logger.info(f"Weather data fetched successfully for {location}")
-            return f"{temp}°F and {description}"
+            return f"{temp}°C and {description}"
 
     except Exception as e:
         logger.error(f"Error fetching weather: {e}")
